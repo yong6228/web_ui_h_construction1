@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* .logo와 .menu를 묶어줌 */
+/* 로고 영역 스타일 적용 */
+/* .imgslide와 .contents 묶어줌 */
+* {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	font-family: "맑은 고딕";
+	color: #333333;
+}
+body {
+	width: 1000px;
+	background-color: #ffffff;
+	font-size: 20px;
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+header {
+	height: 100px;
+	width: 1000px;
+}
+.top {
+	height: 100px;
+	width: 1000px;
+}
+.logo {
+	float: left;
+	height: 100px;
+	width: 180px;
+	img {
+		float: left;
+		height: 40px;
+		width: 150px;
+		margin-top: 30px;
+		margin-left: 25px;
+	}
+}
+.menu {
+	float: left;
+	height: 100px;
+	width: 800px;
+	z-index: 1;
+}
+.navi {
+	float: right;
+	margin-top: 30px;
+	margin-right: 10px;
+	>li {
+		float: left;
+		>a {
+			height: 40px;
+			width: 180px;
+			line-height: 40px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			background-color: #0066ad;
+			color: #ffffff;
+			&:hover {
+				background-color: #30a3f3;
+			}
+		}
+	}
+}
+.submenu {
+	width: 180px;
+	position: absolute;
+	display: none;
+	z-index: 1;
+	>li {
+		>a {
+			height: 35px;
+			line-height: 35px;
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			background-color: #ababab;
+			color: #ffffff;
+			&:hover {
+				background-color: #30a3f3;
+			}
+		}
+	}
+}
+.bodywrap {
+	height: 500px;
+	width: 1000px;
+}
+.imgslide {
+	height: 300px;
+	width: 1000px;
+	position: relative;
+	overflow: hidden;
+	>a {
+		display: block;
+		position: absolute;
+	}
+}
+.imgtext {
+	height: 50px;
+	width: 500px;
+	position: absolute;
+	margin: -25px 0 0 -250px;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 50px;
+	background-color: rgba(40, 40, 40, 0.5);
+}
+.contents {
+	height: 200px;
+	width: 1000px;
+}
+.notice {
+	float: left;
+	height: 180px;
+	width: 390px;
+	margin-top: 10px;
+	>div {
+		width: 390px;
+		border-bottom-color: #fabd43;
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+	}
+	li {
+		float: left;
+		height: 38px;
+		width: 390px;
+		line-height: 38px;
+		font-size: 14px;
+		span {
+			float: right;
+		}
+		&:nth-child(2n) {
+			background-color: #fabd43;
+		}
+		&:hover {
+			font-weight: bold;
+		}
+	}
+}
+.tab {
+	float: left;
+	width: 400px;
+	h4 {
+		float: left;
+		height: 20px;
+		width: 120px;
+		line-height: 20px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: #fabd43;
+	}
+}
+.gallery {
+	float: left;
+	height: 180px;
+	width: 390px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	>div {
+		width: 390px;
+		border-bottom-color: #fabd43;
+		border-bottom-width: 2px;
+	}
+	li {
+		float: left;
+		margin-top: 10px;
+		margin-left: 4px;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+	img {
+		height: 145px;
+		width: 125px;
+	}
+}
+.shortcut {
+	float: right;
+	height: 180px;
+	width: 200px;
+	margin-top: 10px;
+	img {
+		float: right;
+		height: 180px;
+		width: 200px;
+	}
+}
+.sctext {
+	float: right;
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 30px;
+	background-color: rgba(40,40,40,0.5);
+	margin-top: 80px;
+	margin-left: 50px;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+footer {
+	height: 100px;
+	width: 1000px;
+	background-color: #48487d;
+}
+.copy {
+	float: left;
+	height: 100px;
+	width: 500px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 100px;
+	color: #ffffff;
+}
+.btmenu {
+	float: right;
+	height: 50px;
+	width: 300px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 50px;
+}
+.familysite {
+	float: right;
+	height: 50px;
+	width: 300px;
+}

@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* .logo와 .menu를 묶어줌 */
+/* 로고 영역 스타일 적용 */
+/* .imgslide와 .contents 묶어줌 */
+* {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #333333;
+}
+
+body {
+  width: 1000px;
+  background-color: #ffffff;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  height: 100px;
+  width: 1000px;
+}
+
+.top {
+  height: 100px;
+  width: 1000px;
+}
+
+.logo {
+  float: left;
+  height: 100px;
+  width: 180px;
+}
+.logo img {
+  float: left;
+  height: 40px;
+  width: 150px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.menu {
+  float: left;
+  height: 100px;
+  width: 800px;
+  z-index: 1;
+}
+
+.navi {
+  float: right;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+.navi > li {
+  float: left;
+}
+.navi > li > a {
+  height: 40px;
+  width: 180px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ed8713;
+  color: #ffffff;
+}
+.navi > li > a:hover {
+  background-color: #f3ed36;
+}
+
+.submenu {
+  width: 180px;
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+.submenu > li > a {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #b68e14;
+  color: #ffffff;
+}
+.submenu > li > a:hover {
+  background-color: #e8d931;
+}
+
+.bodywrap {
+  height: 500px;
+  width: 1000px;
+}
+
+.imgslide {
+  height: 400px;
+  width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+.imgslide > a {
+  display: block;
+  position: absolute;
+}
+
+.imgtext {
+  height: 50px;
+  width: 500px;
+  position: absolute;
+  margin: -25px 0 0 -250px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 50px;
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+.contents {
+  height: 200px;
+  width: 1000px;
+}
+.date{
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.wwa{
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
+.notice {
+  float: left;
+  text-align: center;
+  height: 180px;
+  width: 390px;
+  margin-top: 10px;
+}
+.notice > div {
+  width: 390px;
+  border-bottom-color: #fabd43;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+.notice li {
+  float: left;
+  height: 38px;
+  width: 390px;
+  line-height: 38px;
+  font-size: 14px;
+}
+.notice li span {
+  float: right;
+}
+.notice li:nth-child(2n) {
+  background-color: #fabd43;
+}
+.notice li:hover {
+  font-weight: bold;
+}
+
+.tab {
+  float: left;
+  width: 400px;
+}
+.tab h4 {
+  float: left;
+  height: 20px;
+  width: 120px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fabd43;
+}
+
+.gallery {
+  /* float: right; */
+  height: 180px;
+  width: 800px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* border: 1px solid black; */
+}
+.gallery > div {
+  width: 390px;
+  border-bottom-color: #fabd43;
+  border-bottom-width: 2px;
+}
+.gallery li {
+  float: right;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+.gallery li:hover {
+  opacity: 0.5;
+}
+.gallery img {
+  height: 174px;
+  width: 136px;
+}
+
+.shortcut {
+  float: right;
+  height: 180px;
+  width: 200px;
+  margin-top: 10px;
+}
+.shortcut img {
+  float: right;
+  height: 180px;
+  width: 200px;
+}
+
+.sctext {
+  float: right;
+  height: 30px;
+  width: 100px;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: rgba(40, 40, 40, 0.5);
+  margin-top: 80px;
+  margin-left: 50px;
+}
+.sctext:hover {
+  opacity: 0.5;
+}
+.olo{
+  height: 30px;
+  width: 700px;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 30px;
+  left: 15%;
+  top: 43%;
+  border: 2px solid #ffffff;
+  font-size: 25px;
+  
+}
+
+.loo{
+  position: absolute;
+  text-align: center;
+  height: 30px;
+  width: 100px;
+  line-height: 30px;
+  bottom: 24%;
+  left: 40%;
+  color: #ffffff;
+  
+   
+}
+.loo1{
+  position: absolute;
+  text-align: center;
+  height: 30px;
+  width: 100px;
+  line-height: 30px;
+  bottom: 24%;
+  left: 47%;
+  color: black;
+}
+
+/* footer {
+  height: 100px;
+  width: 1000px;
+  background-color: #48487d;
+} */
+
+.copy {
+  float: left;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 100px;
+  color: #ffffff;
+}
+
+.btmenu {
+  float: right;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.familysite {
+  float: right;
+  height: 50px;
+  width: 300px;
+}
+
+/*# sourceMappingURL=style.css.map */
